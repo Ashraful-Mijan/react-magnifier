@@ -24,13 +24,13 @@
 	"module": "./dist/Magnifier.es.js",
 	"types": "./dist/Magnifier.d.ts",
 	"scripts": {
-		"start": "npm-run-all build:rollup --parallel start:*",
+		"start": "NODE_OPTIONS=--openssl-legacy-provider npm-run-all build:rollup --parallel start:*",
 		"start:rollup": "rollup --config --sourcemap --watch",
-		"start:storybook": "start-storybook --port 3000",
+		"start:storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook --port 3000",
 		"build": "run-s build:*",
 		"build:clean": "rm -rf ./dist/ ./dist-storybook/",
 		"build:rollup": "rollup --config",
-		"build:storybook": "build-storybook --output-dir ./dist-storybook/",
+		"build:storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook --output-dir ./dist-storybook/",
 		"test": "tsc --noEmit",
 		"lint:css": "stylelint --fix --max-warnings 0",
 		"lint:ts": "eslint --ext .ts,.tsx --fix --max-warnings 0",
@@ -46,7 +46,8 @@
 		"lodash.throttle": "^4.1.1"
 	},
 	"peerDependencies": {
-		"react": ">=16.8.0 <20"
+		"react": ">=16.8.0 <20",
+		"react-dom": ">=16.8.0 <20"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.4",
@@ -71,8 +72,8 @@
 		"npm-run-all": "^4.1.3",
 		"postcss": "^7.0.27",
 		"prettier": "^1.19.1",
-		"react": "^16.12.0",
-		"react-dom": "^16.12.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
 		"rollup": "^1.31.1",
 		"rollup-plugin-postcss": "^2.1.1",
 		"rollup-plugin-typescript2": "^0.26.0",
