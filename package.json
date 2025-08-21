@@ -1,7 +1,7 @@
 {
-	"name": "react-magnifier",
+	"name": "react-zoom-image-magnifier",
 	"version": "3.0.4",
-	"description": "React image zoom component",
+	"description": "React image zoom magnifier component",
 	"keywords": [
 		"react",
 		"component",
@@ -12,12 +12,10 @@
 		"magnifying glass"
 	],
 	"author": {
-		"name": "Samuel Meuli",
-		"email": "me@samuelmeuli.com",
-		"url": "https://samuelmeuli.com"
+		"name": "Ashraful Mijan",
+		"email": "me@ashrafulmijan.com"
 	},
-	"repository": "github:samuelmeuli/react-magnifier",
-	"homepage": "https://react-magnifier.samuelmeuli.com",
+	"repository": "github:Ashraful-Mijan/react-magnifier",
 	"license": "MIT",
 	"files": [
 		"./dist/"
